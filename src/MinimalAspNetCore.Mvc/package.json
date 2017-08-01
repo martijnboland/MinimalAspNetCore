@@ -2,7 +2,18 @@
   "version": "1.0.0",
   "name": "minimalaspnetcore",
   "private": true,
-  "devDependencies": {},
+  "scripts": {
+    "start": "webpack --config webpack.config.js --watch --progress --profile",
+    "build": "webpack --config webpack.config.js --progress --profile",
+    "prod": "webpack --env.NODE_ENV=production --config webpack.config.js --progress"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.4",
+    "file-loader": "^0.11.2",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.4.1"
+  },
   "dependencies": {
     "bootstrap": "^3.3.7",
     "jquery": "^3.2.1"
