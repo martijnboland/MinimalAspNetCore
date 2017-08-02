@@ -12,9 +12,8 @@ module.exports = function (env) {
       main: './Client/js/main'
     },
     output: {
-      path: path.join(__dirname, 'wwwroot/dist'),
-      filename: '[name].js',
-      chunkFilename: '[id].js'
+      path: path.resolve(__dirname, 'wwwroot/dist'),
+      filename: '[name].js'
     },
     devtool: 'eval-source-map',
     resolve: {
